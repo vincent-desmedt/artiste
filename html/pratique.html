@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-bgd">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="De Smedt Vincent">
+		<meta name="description" content="If I Call groupe de Rock français de la région de Huy. Il est composé de Simon, David, Dimitri et Maxime">
+		<title>Pratique - If I Call</title>
+		<link rel="stylesheet" type="text/css" href="../css/desktop.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Neuton|Material+Icons" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="container pratique">
+			<header>
+				<div class="topbar">
+					<h1 role="heading" aria-level="1">
+						<a href="../index.html" title="If I Call Logo">If I Call</a>
+					</h1>
+					<nav id="nav">
+						<a href="#nav" title="Montrer la navigation">Montrer la navigation<i class="material-icons">&#xE5D2;</i></a>
+						<h2 role="heading" aria-level="2">Main navigation menu</h2>
+						<ul>
+								<li><a href="#" title="Cacher la navigation">Cacher la navigation<i class="material-icons">&#xE5CD;</i></a></li>
+				        <li><a href="../index.html" title="Biographie du groupe">Biographie</a></li>
+				        <li><a href="./galerie.html" title="Galerie son et image du groupe">Galerie</a></li>
+				        <li><a href="./bibliographie.html" title="Bibliographie du groupe">Bibliographie</a></li>
+				        <li><a href="./liens.html" title="Liens vers les réseaux sociaux">Liens</a></li>
+				        <li><a href="./pratique.html" title="Prochains évênements">Pratique</a></li>
+								<li><a href="#" title="Cacher la navigation">Cacher la navigation<i class="material-icons">&#xE5CD;</i></a></li>
+				    </ul>
+					</nav>
+				</div>
+			</header>
+			<section class="concert">
+				<h2>Prochain Concert</h2>
+				<p>Le prochain Concert aura lieu le 28 novembre 2015 à 20h00 à Lens St-Remy</p>
+				<p>Prix 5€</p>
+				<form method="get" action="#">
+					<fieldset>
+						<legend>
+							Demande de brochure
+						</legend>
+
+						<fieldset>
+							<legend>Votre identité</legend>
+							<label for="nom">Entrez votre nom</label>
+							<input id="nom" type="text" name="nom" required placeholder="De Smedt" maxlength="20"></input>
+
+							<label for="prenom">Entrez votre prenom</label>
+							<input id="prenom" type="text" name="prenom" required placeholder="Vincent" maxlength="20"></input>
+
+							<label for="email">Entrez votre e-mail</label>
+							<input id="email" type="email" name="email" required placeholder="vincent.desmedt@gmail.com" maxlength="30"></input>
+						</fieldset>
+
+						<fieldset>
+							<legend>Votre adresse</legend>
+							<label for="rue">Entrez votre rue</label>
+							<input id="rue" type="text" name="rue" required placeholder="rue Gaston Grégoire" maxlength="20"></input>
+
+							<label for="ville">Entrez votre ville</label>
+							<input id="ville" type="text" name="ville" required placeholder="Amay" maxlength="20"></input>
+
+							<label for="codePostal">Entrez votre code postal</label>
+							<input id="codePostal" type="text" name="codePostal" placeholder="4540" maxlength="10" required></input>
+						</fieldset>
+
+						<fieldset>
+							<label for="nbreBrochure">Nombre de brochures</label>
+							<input id="nbreBrochure" type="number" name="nbreBrochure" min="1" max="5" value="1" required></input>
+						</fieldset>
+						<input type="submit"></input>
+
+					</fieldset>
+				</form>
+			</section>
+		</div>
+	</body>
+</html>
