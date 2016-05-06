@@ -1,0 +1,17 @@
+.navigation{
+
+    &__list{
+        float: right;
+        margin-right: $margin;
+    }
+
+    &__elt{
+        float: left;
+    }
+
+    &__link{
+        display: inline-block;
+        line-height: 4.8rem;
+        min-width: 100px;
+    }
+}

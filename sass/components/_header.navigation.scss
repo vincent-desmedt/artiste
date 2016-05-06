@@ -1,0 +1,17 @@
+.navigation{
+
+    &__list{
+        text-align: center;
+    }
+
+    &__link{
+        font-size: 1.2rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-bottom: 0.1rem solid grey;
+        text-shadow: 0.1rem 0.1rem black;
+
+        &:hover,&:active,&:focus,&[href="#"]{
+            border-bottom: 0.2rem solid white;
+        }
+    }
+}

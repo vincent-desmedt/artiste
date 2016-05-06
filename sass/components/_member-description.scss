@@ -1,0 +1,17 @@
+.member-description{
+    background-color: #D0D0D6;
+    text-align: center;
+    padding: 0 $margin;
+
+    &__text{
+        text-align: left;
+    }
+
+    &__img{
+        border-radius: 100%;
+    }
+}
+
+.member-description:nth-child(2n){
+    background-color: #E4E4EB;
+}
