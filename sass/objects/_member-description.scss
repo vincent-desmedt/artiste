@@ -3,10 +3,28 @@
     &__img{
         vertical-align: middle;
         margin: 5rem 0;
+        width: 30%;
+        height: auto;
     }
 
     &__text{
         display: inline-block;
         vertical-align: middle;
+    }
+}
+
+
+@media screen and (max-width: 1352px) {
+    .member-description{
+
+
+        &__img{
+            // width: 20%;
+            // height: auto;
+        }
+
+        &__text{
+            max-width: 60%;
+        }
     }
 }

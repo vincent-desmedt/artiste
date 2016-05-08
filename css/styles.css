@@ -85,7 +85,7 @@ html, body {
 
 h1 {
   font-size: 12rem;
-  font-size: 15vh;
+  font-size: 14vh;
   line-height: 100%;
   text-align: center;
   font-weight: bold;
@@ -96,11 +96,16 @@ h1 {
   top: 50%;
   transform: translateY(-50%);
   text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.7); }
-  h1 span {
+  h1 .header__heading-band-name {
     display: block; }
   h1 span.not-home {
     font-size: 0;
     position: absolute; }
+
+@media screen and (max-width: 1352px) {
+  h1 .header__not-for-mobile {
+    position: absolute;
+    font-size: 0; } }
 
 h2, h3 {
   position: absolute;
@@ -119,7 +124,7 @@ p {
   color: black;
   font-size: 1.6rem;
   line-height: 2.2rem;
-  max-width: 700px;
+  width: 700px;
   padding: 5rem;
   margin: 0 auto; }
 
@@ -170,11 +175,17 @@ p {
 
 .member-description__img {
   vertical-align: middle;
-  margin: 5rem 0; }
+  margin: 5rem 0;
+  width: 30%;
+  height: auto; }
 
 .member-description__text {
   display: inline-block;
   vertical-align: middle; }
+
+@media screen and (max-width: 1352px) {
+  .member-description__text {
+    max-width: 60%; } }
 
 .footer {
   text-align: center;
@@ -297,11 +308,16 @@ p {
   .song__target {
     position: absolute;
     left: -100001%; }
+    .song__target p {
+      max-width: 100%; }
   .song__lyrics:last-of-type {
     margin-bottom: 8rem; }
 
 .song + .song {
   margin-top: 1rem; }
+
+.song:last-child .song__lyrics:last-of-type {
+  margin-bottom: 0; }
 
 .social-media {
   margin: 5rem auto 0;
