@@ -1,0 +1,43 @@
+.contact{
+
+    &__elt{
+        border: 0.1rem solid #1E2028;
+    }
+
+    &__label{
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 2rem;
+        background-color: #1E2028;
+    }
+
+    &__input{
+        border: none;
+        padding: 2rem;
+        font-size: 1.6rem;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+
+        &:hover,&:active,&:focus{
+            background-color: #E4E4EB;
+        }
+    }
+
+    [type="submit"]{
+        font: 1.8rem $montserrat;
+        padding: 2rem;
+        background-color: #1E2028;
+        color: white;
+        border: none;
+        cursor: pointer;
+
+        &:hover,&:active,&:focus{
+            background-color: #E4E4EB;
+            color: #1E2028;
+        }
+    }
+
+}

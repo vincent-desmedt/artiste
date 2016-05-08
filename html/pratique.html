@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="De Smedt Vincent">
+		<meta name="description" content="If I Call est un groupe de Rock français de la région de Huy. Il est composé de Simon, David, Dimitri et Maxime">
+		<title>Pratique - If I Call</title>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	</head>
+	<body>
+		<header class="header">
+            <h1 class="header__heading index" role="heading" aria-level="1"><span class="header__heading-band-name not-home">If I Call</span>&nbsp;Pratique.&nbsp;</h1>
+			<div class="topbar">
+				<nav class="navigation">
+                    <h2 role="heading" aria-level="2">Navigation</h2>
+                    <!-- <label class="navigation__menu-label" for="navigation">navigation</label>
+                    <input class="navigation__menu-burger" id="navigation" type="checkbox" name="navigation"> -->
+					<ul class="navigation__list">
+    			        <li class="navigation__elt"><a class="navigation__link" href="../index.html" title="biographie du groupe">Biographie</a></li>
+    			        <li class="navigation__elt"><a class="navigation__link" href="./galerie.html" title="galerie photo">Galerie</a></li>
+    			        <li class="navigation__elt"><a class="navigation__link" href="./bibliographie.html" title="bibliographie du groupe">Bibliographie</a></li>
+    			        <li class="navigation__elt"><a class="navigation__link" href="./liens.html" title="liens vers les réseaux sociaux">Liens</a></li>
+    			        <li class="navigation__elt"><a class="navigation__link" href="#" title="prochains événements">Pratique</a></li>
+			        </ul>
+				</nav>
+			</div>
+        </header>
+        <main class="container">
+			<h2 class="container__heading" role="heading" aria-level="2">Prochains événements</h2>
+            <p class="next-concert-description">Le prochain concert aura lieu le 28 juin 2016 à 20h00 à Lens St-Remy. Le prix est de 5€. N'hésitez pas à demander une brochure ci-dessous.</p>
+            <form class="contact" method="post" action="#">
+                <div class="contact__elt">
+                    <label class="contact__label" for="lastname">nom</label>
+                    <input class="contact__input" id="lastname" type="text" name="lastname" placeholder="De Smedt" maxlength="40" required>
+                </div>
+                <div class="contact__elt">
+                    <label class="contact__label" for="firstname">prénom</label>
+                    <input class="contact__input" id="firstname" type="text" name="firstname" placeholder="Vincent" maxlength="30" required>
+                </div>
+                <div class="contact__elt">
+                    <label class="contact__label" for="email">e-mail</label>
+                    <input class="contact__input" id="email" type="email" name="email" placeholder="vincent-desmedt@skynet.be" maxlength="50" required>
+                </div>
+                <div class="contact__elt">
+                    <label class="contact__label" for="street">rue</label>
+                    <input class="contact__input" id="street" type="text" name="street" placeholder="Rue Gaston Grégoire 20" maxlength="100" required>
+                </div>
+                <div class="contact__elt">
+                    <label class="contact__label" for="city">ville</label>
+                    <input class="contact__input" id="city" type="text" name="city" placeholder="Amay" maxlength="100" required>
+                </div>
+                <div class="contact__elt">
+                    <label class="contact__label" for="catalog">brochure(s)</label>
+                    <input class="contact__input" id="catalog" type="number" name="catalog" min="1" max="5" value="1" required>
+                </div>
+                <div class="contact__elt">
+                    <label class="contact__label" for="submit">envoyer</label>
+                    <input class="contact__submit" id="submit" type="submit" name="submit" required>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <h2 class="footer__heading" role="heading" aria-level="2">Le créateur du site</h2>
+            <p class="footer__copyright">&copy;2016 If&nbsp;I&nbsp;Call, site réalisé par <a class="footer__e-mail" href="mailto:vincent-desmedt@skynet.be?Subject=Hello%20I%20want%20a%20website" title="e-mail du créateur du site">Vincent De Smedt</a></p>
+        </footer>
+	</body>
+</html>

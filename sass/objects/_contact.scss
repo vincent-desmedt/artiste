@@ -1,0 +1,38 @@
+.contact{
+    padding-top: 5rem;
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+
+    &__elt{
+
+        &:last-child label{
+            position: absolute;
+            left: -101%;
+        }
+    }
+
+    &__elt + &__elt{
+        margin-top: 1rem;
+    }
+
+    &__label{
+        min-width: 131.634px;
+        display: inline-block;
+    }
+
+    &__input{
+        box-sizing: border-box;
+        float: right;
+        display: inline-block;
+        width: calc(100% - 131.634px);
+
+    }
+
+    [type="submit"]{
+        display: block;
+        width: 100%;
+
+    }
+
+}
