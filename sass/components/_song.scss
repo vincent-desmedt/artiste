@@ -2,9 +2,21 @@
     background-color: #1E2028;
 
     &__label-checkbox{
-        font: italic bold 4rem $montserrat;
+        font: italic bold 3rem $montserrat;
         padding: 8rem 4rem;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 720px) {
+        &__label-checkbox{
+            padding: 8rem 4rem 16rem;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        &__label-checkbox{
+            padding: 8rem 2rem 16rem;
+        }
     }
 
     &__label-checkbox:after{
@@ -20,6 +32,12 @@
         bottom: 0;
         right: 0;
         background-color: white;
+    }
+
+    @media screen and (max-width: 720px) {
+        &__label-checkbox:after{
+            width: 100%;
+        }
     }
 
     &__target{

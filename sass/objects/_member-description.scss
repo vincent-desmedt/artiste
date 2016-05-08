@@ -13,18 +13,30 @@
     }
 }
 
-
-@media screen and (max-width: 1352px) {
-    .member-description{
-
-
-        &__img{
-            // width: 20%;
-            // height: auto;
-        }
-
-        &__text{
-            max-width: 60%;
-        }
-    }
-}
+// 
+// @media screen and (max-width: 1352px) {
+//     .member-description{
+//
+//         &__text{
+//             max-width: 60%;
+//         }
+//     }
+// }
+//
+// @media screen and (max-width: 720px) {
+//     .member-description{
+//
+//         &__text{
+//             max-width: 650px;
+//         }
+//     }
+// }
+//
+// @media screen and (max-width: 580px) {
+//     .member-description{
+//
+//         &__text{
+//             max-width: 500px;
+//         }
+//     }
+// }

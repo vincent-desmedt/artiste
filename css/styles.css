@@ -84,8 +84,8 @@ html, body {
   color: white; }
 
 h1 {
-  font-size: 12rem;
-  font-size: 14vh;
+  font-size: 6rem;
+  font-size: 10.5vh;
   line-height: 100%;
   text-align: center;
   font-weight: bold;
@@ -127,6 +127,11 @@ p {
   width: 700px;
   padding: 5rem;
   margin: 0 auto; }
+
+@media screen and (max-width: 720px) {
+  p {
+    width: 100%;
+    padding: 5rem 2.5rem; } }
 
 ::-webkit-input-placeholder {
   color: #1E2028; }
@@ -183,10 +188,6 @@ p {
   display: inline-block;
   vertical-align: middle; }
 
-@media screen and (max-width: 1352px) {
-  .member-description__text {
-    max-width: 60%; } }
-
 .footer {
   text-align: center;
   margin: 0; }
@@ -206,27 +207,55 @@ p {
     float: left;
     display: block;
     width: 100%;
-    padding-bottom: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
+    padding-bottom: 100%; }
     .picture__link[href="#picture1"] {
-      background: url(../assets/img/1.jpg) no-repeat center center; }
+      background: url(../assets/img/1.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
     .picture__link[href="#picture2"] {
-      background: url(../assets/img/2.jpg) no-repeat center center; }
+      background: url(../assets/img/2.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
     .picture__link[href="#picture3"] {
-      background: url(../assets/img/3.jpg) no-repeat center center; }
+      background: url(../assets/img/3.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
     .picture__link[href="#picture4"] {
-      background: url(../assets/img/4.jpg) no-repeat center center; }
+      background: url(../assets/img/4.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
     .picture__link[href="#picture5"] {
-      background: url(../assets/img/5.jpg) no-repeat center center; }
+      background: url(../assets/img/5.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
     .picture__link[href="#picture6"] {
-      background: url(../assets/img/6.jpg) no-repeat center center; }
+      background: url(../assets/img/6.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
     .picture__link[href="#picture7"] {
-      background: url(../assets/img/7.jpg) no-repeat center center; }
+      background: url(../assets/img/7.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
     .picture__link[href="#picture8"] {
-      background: url(../assets/img/8.jpg) no-repeat center center; }
+      background: url(../assets/img/8.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
     .picture__link:hover:after, .picture__link:focus:after {
       content: "";
       display: block;
@@ -306,6 +335,19 @@ p {
       width: 100%;
       height: auto; } }
 
+@media screen and (max-width: 414px) {
+  .picture {
+    width: 100%;
+    padding-bottom: 100%; }
+    .picture__link:hover:after, .picture__link:focus:after {
+      width: 100%;
+      padding-bottom: 100%; }
+    .picture__target:target img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: auto; } }
+
 .song {
   max-width: 80%;
   margin: 0 auto;
@@ -369,6 +411,10 @@ p {
   .contact [type="submit"] {
     display: block;
     width: 100%; }
+
+@media screen and (max-width: 375px) {
+  .contact {
+    width: 100%; } }
 
 .header {
   background: url(../assets/img/couverture.jpg) no-repeat center center fixed;
@@ -438,6 +484,38 @@ p {
 .member-description:nth-child(2n) {
   background-color: #E4E4EB; }
 
+@media screen and (max-width: 1134px) {
+  .member-description {
+    padding: 0; }
+    .member-description__img {
+      display: none; }
+    .member-description__container {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/img/simon.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+      .member-description__container p {
+        color: white; }
+  .member-description + .member-description div {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/david.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  .member-description + .member-description + .member-description div {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/dimitri.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  .member-description + .member-description + .member-description + .member-description div {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/maxime.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
 .footer p {
   font-size: 1.4rem; }
 
@@ -448,9 +526,15 @@ p {
 .song {
   background-color: #1E2028; }
   .song__label-checkbox {
-    font: italic bold 4rem "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: italic bold 3rem "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 8rem 4rem;
     cursor: pointer; }
+  @media screen and (max-width: 720px) {
+    .song__label-checkbox {
+      padding: 8rem 4rem 16rem; } }
+  @media screen and (max-width: 320px) {
+    .song__label-checkbox {
+      padding: 8rem 2rem 16rem; } }
   .song__label-checkbox:after {
     content: "+";
     color: #1E2028;
@@ -464,6 +548,9 @@ p {
     bottom: 0;
     right: 0;
     background-color: white; }
+  @media screen and (max-width: 720px) {
+    .song__label-checkbox:after {
+      width: 100%; } }
   .song__target {
     background-color: white;
     text-align: left; }
@@ -503,6 +590,12 @@ p {
   font-size: 1.6rem;
   padding: 2rem;
   background-color: #1E2028; }
+
+@media screen and (max-width: 375px) {
+  .contact__label {
+    padding: 2rem 1rem; }
+  .contact__input {
+    padding: 2rem 1rem; } }
 
 .contact__input {
   border: none;

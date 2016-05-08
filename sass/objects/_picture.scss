@@ -16,41 +16,69 @@
         display: block;
         width: 100%;
         padding-bottom: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
 
         &[href="#picture1"]{
             background: url(../assets/img/1.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         &[href="#picture2"]{
             background: url(../assets/img/2.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         &[href="#picture3"]{
             background: url(../assets/img/3.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         &[href="#picture4"]{
             background: url(../assets/img/4.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         &[href="#picture5"]{
             background: url(../assets/img/5.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         &[href="#picture6"]{
             background: url(../assets/img/6.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         &[href="#picture7"]{
             background: url(../assets/img/7.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         &[href="#picture8"]{
             background: url(../assets/img/8.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         &:hover:after,&:focus:after{
@@ -154,6 +182,31 @@
             &:hover:after,&:focus:after{
                 width: 50%;
                 padding-bottom: 50%;
+            }
+        }
+
+        &__target:target{
+
+            img{
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .picture{
+        width: 100%;
+        padding-bottom: 100%;
+
+        &__link{
+
+            &:hover:after,&:focus:after{
+                width: 100%;
+                padding-bottom: 100%;
             }
         }
 

@@ -15,3 +15,58 @@
 .member-description:nth-child(2n){
     background-color: #E4E4EB;
 }
+
+@media screen and (max-width: 1134px) {
+    .member-description{
+        padding: 0;
+
+        &__img{
+            display: none;
+        }
+
+        &__container{
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/img/simon.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+            p{
+                color: white;
+            }
+        }
+    }
+
+    .member-description+.member-description{
+        div{
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/david.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+        }
+    }
+
+    .member-description+.member-description+.member-description{
+        div{
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/dimitri.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+        }
+    }
+
+    .member-description+.member-description+.member-description+.member-description{
+        div{
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/maxime.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+        }
+    }
+}

@@ -6,8 +6,8 @@ html,body {
 }
 
 h1{
-    font-size: 12rem;
-    font-size: 14vh;
+    font-size: 6rem;
+    font-size: 10.5vh;
     line-height: 100%;
     text-align: center;
     font-weight: bold;
@@ -57,6 +57,13 @@ p{
     width: 700px;
     padding: 5rem;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 720px) {
+    p{
+        width: 100%;
+        padding: 5rem 2.5rem;
+    }
 }
 
 ::-webkit-input-placeholder {
