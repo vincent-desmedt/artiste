@@ -293,6 +293,19 @@ p {
     .picture__target:target p {
       color: white; }
 
+@media screen and (max-width: 1352px) {
+  .picture {
+    width: 50%;
+    padding-bottom: 50%; }
+    .picture__link:hover:after, .picture__link:focus:after {
+      width: 50%;
+      padding-bottom: 50%; }
+    .picture__target:target img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: auto; } }
+
 .song {
   max-width: 80%;
   margin: 0 auto;

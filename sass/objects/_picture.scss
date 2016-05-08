@@ -141,3 +141,30 @@
         }
     }
 }
+
+
+
+@media screen and (max-width: 1352px) {
+    .picture{
+        width: 50%;
+        padding-bottom: 50%;
+
+        &__link{
+
+            &:hover:after,&:focus:after{
+                width: 50%;
+                padding-bottom: 50%;
+            }
+        }
+
+        &__target:target{
+
+            img{
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
