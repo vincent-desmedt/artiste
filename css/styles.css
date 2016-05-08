@@ -202,7 +202,7 @@ p {
       background: url(../assets/img/7.jpg) no-repeat center center; }
     .picture__link[href="#picture8"] {
       background: url(../assets/img/8.jpg) no-repeat center center; }
-    .picture__link:hover:after {
+    .picture__link:hover:after, .picture__link:focus:after {
       content: "";
       display: block;
       width: 25%;
@@ -267,6 +267,27 @@ p {
       background-color: black; }
     .picture__target:target p {
       color: white; }
+
+.song {
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: center; }
+  .song__label-checkbox {
+    position: relative;
+    display: block; }
+  .song__checkbox {
+    position: absolute;
+    left: -10001%; }
+    .song__checkbox:checked + div {
+      position: static; }
+  .song__target {
+    position: absolute;
+    left: -100001%; }
+  .song__lyrics:last-of-type {
+    margin-bottom: 8rem; }
+
+.song + .song {
+  margin-top: 1rem; }
 
 .header {
   background: url(../assets/img/couverture.jpg) no-repeat center center fixed;
@@ -342,5 +363,32 @@ p {
 .footer a {
   color: black;
   text-decoration: underline; }
+
+.song {
+  background-color: #1E2028; }
+  .song__label-checkbox {
+    font: italic bold 4rem "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 8rem 4rem;
+    cursor: pointer; }
+  .song__label-checkbox:after {
+    content: "+";
+    color: #1E2028;
+    border: 0.4rem solid #1E2028;
+    display: block;
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    line-height: 8rem;
+    font-style: normal;
+    bottom: 0;
+    right: 0;
+    background-color: white; }
+  .song__target {
+    background-color: white;
+    text-align: left; }
+  .song__lyrics {
+    padding-bottom: 2rem; }
+  .song__lyrics + .song__lyrics {
+    padding-top: 0; }
 
 /*# sourceMappingURL=styles.css.map */

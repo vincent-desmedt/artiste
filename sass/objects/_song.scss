@@ -1,0 +1,32 @@
+.song{
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: center;
+
+    &__label-checkbox{
+        position: relative;
+        display: block;
+    }
+
+    &__checkbox{
+        position: absolute;
+        left: -10001%;
+
+        &:checked + div{
+            position: static;
+        }
+    }
+
+    &__target{
+        position: absolute;
+        left: -100001%;
+    }
+
+    &__lyrics:last-of-type{
+        margin-bottom: 8rem;
+    }
+}
+
+.song + .song{
+    margin-top: 1rem;
+}

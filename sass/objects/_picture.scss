@@ -53,7 +53,7 @@
             background: url(../assets/img/8.jpg) no-repeat center center;
         }
 
-        &:hover:after{
+        &:hover:after,&:focus:after{
             content: "";
             display: block;
             width: 25%;

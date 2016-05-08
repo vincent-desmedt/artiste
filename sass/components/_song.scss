@@ -1,0 +1,37 @@
+.song{
+    background-color: #1E2028;
+
+    &__label-checkbox{
+        font: italic bold 4rem $montserrat;
+        padding: 8rem 4rem;
+        cursor: pointer;
+    }
+
+    &__label-checkbox:after{
+        content: "+";
+        color: #1E2028;
+        border: 0.4rem solid #1E2028;
+        display: block;
+        position: absolute;
+        width: 8rem;
+        height: 8rem;
+        line-height: 8rem;
+        font-style: normal;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+    }
+
+    &__target{
+        background-color: white;
+        text-align: left;
+    }
+
+    &__lyrics{
+        padding-bottom: 2rem;
+    }
+
+    &__lyrics + &__lyrics{
+        padding-top: 0;
+    }
+}
