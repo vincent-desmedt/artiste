@@ -1,5 +1,14 @@
 .navigation{
 
+    &__menu-label{
+        font-size: 0;
+    }
+
+    &__menu-burger{
+        position: absolute;
+        left: -10001%;
+    }
+
     &__list{
         text-align: center;
     }
@@ -12,6 +21,37 @@
 
         &:hover,&:active,&:focus,&[href="#"]{
             border-bottom: 0.2rem solid white;
+        }
+    }
+}
+
+@media screen and (max-width: 1134px) {
+
+    .navigation{
+
+        &__menu-label:before{
+            background-color: black;
+            font: 2.4rem $glyphs;
+            content: "";
+            line-height: 5rem;
+            width: 5rem;
+            text-align: center;
+            border-radius: 100%;
+        }
+
+        &__list{
+            background-color: black;
+            font-size: 2.4rem;
+            text-transform: uppercase;
+        }
+
+        &__elt{
+            float: none;
+        }
+
+        &__link{
+            line-height: 12vh;
+            font-size: 1.6rem;
         }
     }
 }

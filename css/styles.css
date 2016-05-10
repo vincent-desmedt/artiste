@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Modus Versus Slicing
  *
  * /sass/settings/_paths.scss - Global paths variables
@@ -164,6 +165,29 @@ p {
   line-height: 4.8rem;
   min-width: 100px; }
 
+@media screen and (max-width: 1134px) {
+  .navigation__menu-label:before {
+    position: fixed;
+    top: 1rem;
+    left: 5%;
+    z-index: 2;
+    display: block; }
+  .navigation__list {
+    position: absolute;
+    top: -10000001%;
+    margin: 0 auto;
+    min-width: 100%; }
+  .navigation__elt {
+    float: none; }
+    .navigation__elt:first-of-type {
+      margin-top: 5rem;
+      margin-top: 20vh; }
+    .navigation__elt:last-of-type {
+      margin-bottom: 5rem;
+      margin-bottom: 20vh; }
+  #navigation:checked + .navigation__list {
+    top: 0; } }
+
 .next-concert {
   position: absolute;
   text-align: center;
@@ -256,7 +280,7 @@ p {
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover; }
-    .picture__link:hover:after, .picture__link:focus:after {
+    .picture__link:hover:after, .picture__link:active:after, .picture__link:focus:after {
       content: "";
       display: block;
       width: 25%;
@@ -285,9 +309,9 @@ p {
       z-index: 2;
       top: 0;
       right: 0; }
-      .picture__target:target a:hover, .picture__target:target a:active, .picture__target:target a:focus {
+      .picture__target:target a:active, .picture__target:target a:focus {
         background: rgba(0, 0, 0, 0.5); }
-      .picture__target:target a:hover:before, .picture__target:target a:active:before, .picture__target:target a:focus:before {
+      .picture__target:target a:active:before, .picture__target:target a:focus:before {
         content: "";
         display: block;
         height: 100%;
@@ -301,7 +325,7 @@ p {
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         transform: rotate(45deg); }
-      .picture__target:target a:hover:after, .picture__target:target a:active:after, .picture__target:target a:focus:after {
+      .picture__target:target a:active:after, .picture__target:target a:focus:after {
         content: "";
         display: block;
         height: 100%;
@@ -424,6 +448,13 @@ p {
   background-size: cover;
   height: 95%; }
 
+.navigation__menu-label {
+  font-size: 0; }
+
+.navigation__menu-burger {
+  position: absolute;
+  left: -10001%; }
+
 .navigation__list {
   text-align: center; }
 
@@ -434,6 +465,25 @@ p {
   text-shadow: 0.1rem 0.1rem black; }
   .navigation__link:hover, .navigation__link:active, .navigation__link:focus, .navigation__link[href="#"] {
     border-bottom: 0.2rem solid white; }
+
+@media screen and (max-width: 1134px) {
+  .navigation__menu-label:before {
+    background-color: black;
+    font: 2.4rem "Glyphs";
+    content: "";
+    line-height: 5rem;
+    width: 5rem;
+    text-align: center;
+    border-radius: 100%; }
+  .navigation__list {
+    background-color: black;
+    font-size: 2.4rem;
+    text-transform: uppercase; }
+  .navigation__elt {
+    float: none; }
+  .navigation__link {
+    line-height: 12vh;
+    font-size: 1.6rem; } }
 
 .next-concert__link {
   padding: 2rem 4rem;
@@ -568,17 +618,17 @@ p {
   background-size: cover; }
 
 .social-media a:first-of-type {
-  background: #1e2028 url(../../assets/img/facebook.svg) no-repeat center center; }
+  background: #1e2028 url(../assets/img/facebook.svg) no-repeat center center; }
   .social-media a:first-of-type:hover, .social-media a:first-of-type:active, .social-media a:first-of-type:focus {
     background-color: grey; }
 
 .social-media a:nth-of-type(2) {
-  background: #1e2028 url(../../assets/img/soundcloud.svg) no-repeat center center; }
+  background: #1e2028 url(../assets/img/soundcloud.svg) no-repeat center center; }
   .social-media a:nth-of-type(2):hover, .social-media a:nth-of-type(2):active, .social-media a:nth-of-type(2):focus {
     background-color: grey; }
 
 .social-media a:nth-of-type(3) {
-  background: #1e2028 url(../../assets/img/youtube.svg) no-repeat center center; }
+  background: #1e2028 url(../assets/img/youtube.svg) no-repeat center center; }
   .social-media a:nth-of-type(3):hover, .social-media a:nth-of-type(3):active, .social-media a:nth-of-type(3):focus {
     background-color: grey; }
 

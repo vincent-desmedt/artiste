@@ -15,3 +15,42 @@
         min-width: 100px;
     }
 }
+
+@media screen and (max-width: 1134px) {
+
+    .navigation{
+
+        &__menu-label:before{
+            position:fixed;
+            top: 1rem;
+            left: $margin;
+            z-index: 2;
+            display: block;
+        }
+
+        &__list{
+            position: absolute;
+            top: -10000001%;
+            margin: 0 auto;
+            min-width: 100%;
+        }
+
+        &__elt{
+            float: none;
+
+            &:first-of-type{
+                margin-top: 5rem;
+                margin-top: 20vh;
+            }
+
+            &:last-of-type{
+                margin-bottom: 5rem;
+                margin-bottom: 20vh;
+            }
+        }
+    }
+
+    #navigation:checked + .navigation__list{
+        top: 0;
+    }
+}

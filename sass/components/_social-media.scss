@@ -10,21 +10,21 @@
     }
 
     a:first-of-type{
-        background: #1e2028 url(../../assets/img/facebook.svg) no-repeat center center;
+        background: #1e2028 url(../assets/img/facebook.svg) no-repeat center center;
         &:hover,&:active,&:focus{
             background-color: grey;
         }
     }
 
     a:nth-of-type(2){
-        background: #1e2028 url(../../assets/img/soundcloud.svg) no-repeat center center;
+        background: #1e2028 url(../assets/img/soundcloud.svg) no-repeat center center;
         &:hover,&:active,&:focus{
             background-color: grey;
         }
     }
 
     a:nth-of-type(3){
-        background: #1e2028 url(../../assets/img/youtube.svg) no-repeat center center;
+        background: #1e2028 url(../assets/img/youtube.svg) no-repeat center center;
         &:hover,&:active,&:focus{
             background-color: grey;
         }
